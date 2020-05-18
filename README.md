@@ -1,6 +1,6 @@
 # eCommerce
 
-eCommerce is a full stack react application that will sells clothing via Stripe API.
+eCommerce is a full stack react application that sells clothing via Stripe API.
 
 ## Tools Used?
 
