@@ -37,7 +37,8 @@ class SignIn extends React.Component {
 
 		this.setState({ [name]: value });
 	};
-
+	// any buttons inside of a form element will cause the form to treat the button as type="submit" by default
+	// so our custom button for google sign in needs type button
 	render() {
 		return (
 			<div className="sign-in">
@@ -63,7 +64,11 @@ class SignIn extends React.Component {
 					/>
 					<div className="buttons">
 						<CustomButton type="submit"> Sign in </CustomButton>
-						<CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+						<CustomButton
+							type="button"
+							onClick={signInWithGoogle}
+							isGoogleSignIn
+						>
 							Sign in With Google
 						</CustomButton>
 					</div>
