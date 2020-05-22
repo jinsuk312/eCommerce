@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 // tells CRA that you want a react component that renders an SVG, rather than its filename
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { auth } from '../../firebase/firebase.utils';
 import './header.styles.scss';
 
@@ -30,6 +31,7 @@ const Header = ({ currentUser }) => (
 			)}
 			<CartIcon />
 		</div>
+		<CartDropdown />
 	</div>
 );
 
